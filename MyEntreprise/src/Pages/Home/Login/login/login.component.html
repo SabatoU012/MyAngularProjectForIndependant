@@ -1,0 +1,25 @@
+<form class="card text-center p-2" [formGroup]="monForm">
+    <div>
+        <label class="form-label">Email</label>
+        <br>
+        <input type="text" formControlName="email" class="form-control">
+        <p *ngIf="!monForm.get('email')?.valid && monForm.get('email')?.dirty"
+            class="text-danger">
+            l'email est invalide
+        </p>
+    </div>
+    
+    <div>
+        <label class="form-label">Password</label>
+        <br>
+        <input type="text" formControlName="password" class="form-control">
+        <p *ngIf="!monForm.get('password')?.valid && monForm.get('password')?.dirty"
+            class="text-danger">
+            le mot de passe est invalide
+        </p>
+    </div>
+
+    <div class="m-2">
+        <button class="btn btn-outline-primary"> Login </button>
+    </div>
+</form>

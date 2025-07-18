@@ -1,0 +1,46 @@
+<div class="m-auto w-75 text-center">
+    <div class="card"> 
+        <h1 class="card m-auto w-100 text-center text-uppercase">
+            Service Proposé : Programmation
+        </h1>
+    </div>   
+    <div class="card">
+        <h3>
+            Présentation Du Service
+        </h3>
+        <p style="max-width: 550px;" class="fst-italic m-auto fs-5">
+            Hello World ! 
+        </p>
+    </div> 
+    <div class="card mt-3">
+        <h4>
+            My Options For This Services
+        </h4>
+    </div>
+    <div *ngFor="let item of MyOptionsForThisService">
+        <div class="card">
+            <h4>
+                Name Of This Option
+            </h4>
+            <p class="fs-5">
+                {{item.name}}
+            </p>
+            
+            <h4 class="text-decoration-underline">
+                Description 
+            </h4>
+            <p style="max-width: 550px;" class="fst-italic m-auto fs-5">
+                {{item.description}}
+            </p>
+        </div>
+        
+    </div>
+    <div class="card mt-3">
+        <h4 class="text-decoration-underline">
+            Prendre Rendez-Vous
+        </h4> 
+        <p>
+            <button (click)="getRDV()">Cliquez Ici !</button>
+        </p>
+    </div>
+</div>

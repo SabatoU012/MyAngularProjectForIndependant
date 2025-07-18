@@ -1,0 +1,40 @@
+body {
+    background-image: url('../public/choice3.jpg'); //==> image provisoire
+    background-size: cover;
+    background-repeat: no-repeat;
+    height : 100vh; 
+    width : 100%;
+}
+
+.navbar {
+    background-color : #761aa0
+}
+
+.textColorHome {
+    color : #6a36c2;
+}
+
+/* Smartphones (portrait et petits écrans) */
+@media screen and (max-width: 768px) {
+  body {
+    background-position: center top;
+    background-size: cover;
+    background-attachment: scroll;
+  }
+}
+
+/* Tablettes */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  body {
+    background-position: center center;
+    background-size: cover;
+  }
+}
+
+/* Ordinateurs portables & grands écrans */
+@media screen and (min-width: 1025px) {
+  body {
+    background-position: center;
+    background-size: cover;
+  }
+}
