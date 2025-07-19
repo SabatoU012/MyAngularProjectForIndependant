@@ -1,5 +1,5 @@
-<div class="card m-auto w-75 text-start border-0 bg-primary-subtle list-unstyled textColorHome ">
-    <table>
+<div class="card m-auto w-75 text-start border-0 passions list-unstyled textColorHome">
+    <table class="bg-light-subtle">
         <tr>
             <td>
                 <h1>Mes passions</h1>
@@ -9,5 +9,99 @@
             </td>
         </tr>
     </table>
+    <br>
+    <!-- ? Tableau pour mes passions arrangements -->
+    <table class="bg-primary-subtle w-75 m-auto">
+        <br>
+        <tr>
+            <td class="textColorHome text-center bg-primary-subtle w-25">
+                    <h4>Codding</h4>
+                    <h6 *ngIf="progIsVisible">
+                        Depuis mes premiers cours d'électronique où l'on apprenais l'Arduino et où l'on m'a appris tout ce que 
+                        ce simple micro-controlleur pouvait accomplir, juste avec un simple bout de code, j'ai été tout de suite
+                        fasciné par cela. Au fur et à mesure de mon apprentissage, j'ai découvert divers language de 
+                        programmation, qui m'ont tout de suite intéréssé. Certains sont plus compliqué à apprendre,
+                        ou sont plus axés sur une seule chose, mais ils sont tout aussi intéréssants.
 
+                    </h6>
+                    <button class="btn btn-outline-primary mt-2 mb-3" (click)="showDetailsProg()"><a class="textColorHome">En savoir plus</a></button>
+            </td>
+            <td class="textColorHome text-center bg-primary-subtle w-50">
+                    <h4>Électronique</h4>
+                    <h6 *ngIf="elecIsVisible">
+                        Pour l'électronique, 
+                    </h6>
+                    <button class="btn btn-outline-primary mt-2 mb-3" (click)="showDetailsElec()"><a class="textColorHome">En savoir plus</a></button>
+            </td>
+            <td class="textColorHome text-center bg-primary-subtle w-25">
+                <h4>Impression 3D</h4>
+                <h6 *ngIf="tripleDIsVisible">
+                    Pour l'impression 3D, 
+                </h6>
+                <button class="btn btn-outline-primary mt-2 mb-3" (click)="showDetails3D()"><a class="textColorHome">En savoir plus</a></button>
+            </td>
+        </tr>
+        <tr>
+            <td class="textColorHome text-center bg-primary-subtle">
+                <h4>Manga et Anime</h4>
+                <h6 *ngIf="mangaIsVisible">
+                    Pour les mangas,
+                </h6>
+                <button class="btn btn-outline-primary mt-2 mb-3" (click)="showDetailsManga()"><a class="textColorHome">En savoir plus</a></button>
+            </td>
+            <td class="textColorHome text-center bg-primary-subtle">
+                    <h4>Villes Médievales</h4>
+                    <h6 *ngIf="medIsVisible">
+                        Pour les villes médievales, 
+                    </h6>
+                    <button class="btn btn-outline-primary mt-2 mb-3" (click)="showDetailsMedieval()"><a class="textColorHome">En savoir plus</a></button>
+            </td>
+            <td class="textColorHome text-center bg-primary-subtle">
+                    <h4>Sciences</h4>
+                    <h6 *ngIf="scienceIsVisible">
+                        Pour les sciences, 
+                    </h6>
+                    <button class="btn btn-outline-primary mt-2 mb-3" (click)="showDetailsScience()"><a class="textColorHome">En savoir plus</a></button>
+                </td>
+        </tr>
+        <tr>
+            <td class="textColorHome text-center bg-primary-subtle">
+                    <h4>Antiquités</h4>
+                    <h6 *ngIf="antiqIsVisible">
+                        Pour les antiquitées,
+                    </h6>
+                    <button class="btn btn-outline-primary mt-2 mb-3" (click)="showDetailsAntiq()"><a class="textColorHome">En savoir plus</a></button>
+            </td>
+            <td class="textColorHome text-center bg-primary-subtle">
+                <h4>Musique</h4>
+                <h6 *ngIf="musicIsVisible">
+                    Pour la musique,
+                </h6>
+                <button class="btn btn-outline-primary mt-2 mb-3" (click)="showDetailsMusic()"><a class="textColorHome">En savoir plus</a></button>
+            </td>
+            <td class="textColorHome text-center bg-primary-subtle">
+                <h4>Dessins</h4>
+                <h6 *ngIf="drawIsVisible">
+                    Pour le dessin,
+                </h6>
+                <button class="btn btn-outline-primary mt-2 mb-3" (click)="showDetailsDraw()"><a class="textColorHome">En savoir plus</a></button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+
+            </td>
+            <td class="textColorHome text-center bg-primary-subtle">
+                <h4>Photographie</h4>
+                <h6 *ngIf="photoIsVisible">
+                    Pour la photographie,
+                </h6>
+                <button class="btn btn-outline-primary mt-2 mb-3" (click)="showDetailsPhpto()"><a class="textColorHome">En savoir plus</a></button>
+            </td>
+            <td>
+
+            </td>
+        </tr>
+    </table>
+    <br>
 </div>

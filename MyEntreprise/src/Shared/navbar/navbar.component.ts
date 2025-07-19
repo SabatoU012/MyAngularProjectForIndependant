@@ -14,7 +14,7 @@ import { LoginServiceService } from '../../Services/login-service.service';
 })
 export class NavbarComponent {
 
-  img = 'My Logo.png'
+  img = 'mylogoinpurpleandblue.png'
 
   IsOpen : boolean = false
   IsLogged = signal(false)
