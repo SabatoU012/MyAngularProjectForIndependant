@@ -7,8 +7,7 @@ import { HomepageComponent } from "../Pages/Home/homepage/homepage.component";
   selector: 'app-root',
   imports: [
     RouterOutlet,
-    NavbarComponent,
-    HomepageComponent
+    NavbarComponent
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
