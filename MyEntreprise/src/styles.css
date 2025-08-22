@@ -1,6 +1,5 @@
 body {
-    background-image: url('../public/japantemple1.jpg'); //==> image provisoire
-    background-size: cover;
+    background-image: url('../public/japantemple1.jpg');
     background-repeat: no-repeat;
     height : 100vh; 
     width : 100%;
