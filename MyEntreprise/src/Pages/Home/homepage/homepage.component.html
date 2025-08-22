@@ -1,13 +1,43 @@
-<div class="card m-auto w-75 text-start border-0 bg-primary-subtle list-unstyled textColorHome "> 
-    <h1 class="bg-light-subtle">Bienvenue sur le site de KaizenTech !</h1>
-    <h3>L'entreprise aux multiples talents.</h3>
+<div class="card m-auto w-75 text-start border-0 bg-primary-subtle list-unstyled">
+    <table>
+        <tr class="bg-light-subtle">
+            <td>
+                <h1 class="text-decoration-underline title">Bienvenue sur le site de KaizenTech !</h1>
+            </td>
+            <td>
+                <button class="btn btn-outline-primary"><a routerLink='/about' class="textColorHome"> En savoir plus → </a></button>
+            </td>
+        </tr>
+    </table> 
+    
+    <h3 class="textTalent text-center">"L'entreprise aux multiples talents."</h3>
     <br>
-    <h5> Développement et programmation, impression 3D, réparations électroniques… De quoi répondre à (presque) tous vos besoins ! </h5>
-    <!-- <br>
-    <br>
-    <p>Créer dans le but </p> -->
-
-    <div class="text-center">
-        <button class="btn btn-outline-primary"><a routerLink='/about' class="textColorHome"> Découvrir plus à mon sujet → </a></button>
+    <h5 class="textColorHome text-center"> Développement et programmation, impression 3D, réparations électroniques… De quoi répondre à (presque) tous vos besoins ! </h5>
+    <p class="text-center improvement">Site toujours en amélioration...</p>
+    <h6 class="textColorHome text-center">Découvrez en plus sur moi et mon entreprise via le bouton ci-dessus ! ↑ </h6>
+    <h6 class="textColorHome text-center">Ou avec mon petit jeu de la roue ci-dessous 😉 ↓</h6>
+</div>
+<div class="card m-auto w-25 text-start border-0 bg-transparent list-unstyled text-light">
+    <div class="wheel-container">
+        <!--* Curseur -->
+        <div class="pointer"></div>
+        <table class="bg-transparent">
+            <tr>
+                <td>
+                    <button expand="block" class="btn btn-success text-black" (click)="spinWheel()"> Faire tourner la roue </button>
+                </td>
+                <td>
+                    <canvas #wheel width="300" height="300" class=""></canvas>
+                </td>
+                <td>
+                    <button expand="block" class="btn btn-danger text-black" (click)="resetWheel()"> Réinitialiser la roue </button>
+                </td>
+            </tr>
+        </table>
+        <!--* Roue -->
+        
+        <br>
+        <!--* Bouton -->
+           
     </div>
 </div>

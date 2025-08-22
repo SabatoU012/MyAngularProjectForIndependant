@@ -1,59 +1,57 @@
-<div class="w-75 text-center m-auto">
-    <div class="card">
-        <h1>
-            Service Proposé : Impression 3D
+<div class="card m-auto w-75 text-center bg-black">
+        <h1 class="card m-auto w-100 text-center text-uppercase title bg-black">
+            Création et Impression de modèles 3D – Donnez forme à vos idées
+            <cite class="text-capitalize citation">
+                De la modélisation à l’objet final, créez des pièces uniques et personnalisées.
+            </cite>
         </h1>
-    </div>
-
-    <div class="card mt-2">
-        <h3 class="text-decoration-underline">
-            Présentation du Service :
-        </h3>
-        <p style="max-width: 550px;" class="m-auto fs-5">
-            coucou le monde !
-        </p>
-    </div>
-
-    <!-- <div ngbDropdown class=" card w-25 mt-2 d-inline-block">
-        <button class="btn btn-outline-danger" id="dropdownPLA" ngbDropdownToggle> Filament Type </button>
-        <div ngbDropdownMenu aria-labelledby="dropdownPLA">
-            <button ngbDropdownItem>PLA</button>
-        </div>
-    </div>
-    
-    <div class="card mt-2" *ngFor="let item of MyElementsForPrinting">
-        <h5>
-            Matière du filament : 
-        </h5>
-        <p style="max-width: 550px;" class="fs-5 m-auto">
-            {{item.name}}
-        </p>
-
-        <br>
-
-        <h5>
-            Description : 
-        </h5>
-        <p style="max-width: 550px;" class="fs-5 m-auto">
-            {{item.descriptionOfThisFilament}}
-        </p>
         
-        <br>
+        <div class="card listTask">
+            <ul class="list-unstyled">
+                <h5>Ce que je vous propose </h5>
+                <li>
+                    🖌️ Modélisation 3D — Création sur mesure selon vos besoins
+                </li>
+                <li>
+                    ⚙️ Prototypage rapide — Testez vos concepts avant production
+                </li>
+                <li>
+                    🎨 Choix de couleurs — Plusieurs filaments disponibles
+                </li>
+                <li>
+                    🛠️ Pièces de remplacement — Réparation ou adaptation d’objets cassés
+                </li>
+            </ul>
+        </div>
+        <div class="card listTask">
+            <h5>Ce que j'ai comme couleurs</h5>
+                <p>Blanc PLA | quantité : {{whiteQuantity}} gramme(s)</p> 
+                <p>Gris PLA | quantité : {{greyQuantity}} gramme(s)</p> 
+                <p>Bleu PLA | quantité : {{blueQuantity}} gramme(s)</p> 
+                <p>Violet PLA | quantité : {{purpleQuantity}} gramme(s)</p> 
+        </div>
 
-        <h5>
-            Poids : 
-        </h5>
-        <p style="max-width: 550px;" class="fs-5 m-auto">
-            {{item.weight}} kg
-        </p>
-
-        <br>
-
-        <h5>
-            Couleur du filament : 
-        </h5>
-        <p style="max-width: 550px;" class="fs-5 m-auto">
-            {{item.color}}
-        </p>
-    </div> -->
+        <div class="card listProcedure">
+            <ul  class="list-unstyled">
+                <h5> Procédure de travail </h5>
+                <li>
+                    1️⃣ Conception — Modélisation précise et adaptée à l’usage
+                </li>
+                <li>
+                    2️⃣ Impression — Réglages optimisés pour qualité et résistance
+                </li>
+                <li>
+                    3️⃣ Finitions — Nettoyage, ajustements et présentation finale
+                </li>
+            </ul>
+        </div>
+        
+        <div class="card rdv">
+            <h4 class="text-decoration-underline">
+                Prendre Rendez-Vous pour un devis 
+            </h4> 
+            <p>
+                <button (click)="getRDV()"  class="btn btn-outline-dark">Cliquez Ici !</button>
+            </p>
+        </div>
 </div>

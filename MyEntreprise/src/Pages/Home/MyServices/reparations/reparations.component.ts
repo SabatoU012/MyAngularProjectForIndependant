@@ -1,33 +1,36 @@
-import { Component } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { MyServicesDescribed } from '../../../../Models/MyModels.Model';
-import { NgFor } from '@angular/common';
+import { NgFor, NgIf } from '@angular/common';
 import { Router } from '@angular/router';
+import { Coordonnees } from '../../../../Models/coord.model';
 
 @Component({
   selector: 'app-reparations',
-  imports: [
-    NgFor
-  ],
+  imports: [],
   templateUrl: './reparations.component.html',
   styleUrl: './reparations.component.css'
 })
 export class ReparationsComponent {
+  
+  showNumber : boolean = false
+  showEmail : boolean = false
 
-  MyOptionsForThisService : MyServicesDescribed[] = [
-    {
-      name : 'Cafetière',
-      description : 'coucou'
-    },
-    {
-      name : 'Machine à Laver',
-      description : 'coucou'
-    },   
-  ]
+   email : string = 'coucou@gmail.be'
+   phone : string = ''
 
   constructor(
-    private router : Router
+    private router : Router,
   ) {}
+  
   getRDV() {
-    this.router.navigateByUrl('https://calendly.com/willuc-kaizentech')
+    this.router.navigateByUrl('/contact')
+  }
+
+  showPhoneNumber() {
+    this.showNumber = !this.showNumber
+  }
+
+  showEmailAdress() {
+    this.showEmail = !this.showEmail
   }
 }

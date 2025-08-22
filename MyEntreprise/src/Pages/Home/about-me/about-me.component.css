@@ -1,5 +1,13 @@
 .citation {
     font-size : 14pt;
-    color : #9d64ff;
+    color : #FF59EB;
     font-style: italic;
+}
+
+.moreAboutService {
+    color : #9239FA;
+}
+
+.title {
+  color : #75FFFE;
 }

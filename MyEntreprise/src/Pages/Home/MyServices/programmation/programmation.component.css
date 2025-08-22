@@ -1,0 +1,43 @@
+.title {
+    color : #FFFFFF; 
+}
+
+.citation {
+    font-size : 14pt;
+    color : #9d64ff;
+    font-style: italic;
+}
+
+.listTask {
+    background-color : #734E71;
+    color : #BDD1FC;
+    font-size : 14pt;
+}
+
+.listLearn {
+    background-color : #AB74A6;
+    color : #BDD1FC;
+    font-size : 14pt;
+}
+
+.rdv {
+    background-color : #3B3B5C;
+    color : #BDD1FC;
+}
+
+.listProcedure {
+    background-color : #54465C;
+    color : #BDD1FC;
+    font-size : 14pt;
+}
+
+.contact {
+    font-size : 12pt;
+    color : #BDF9FC;
+    font-style: italic;
+}
+
+.bord {
+    border-width : 2px; 
+    border-color : #1D123D;
+}

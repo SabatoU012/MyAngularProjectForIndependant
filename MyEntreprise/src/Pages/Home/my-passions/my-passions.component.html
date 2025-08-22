@@ -1,105 +1,90 @@
-<div class="card m-auto w-75 text-start border-0 passions list-unstyled textColorHome">
+<div class="card m-auto w-75 text-start border-0 passions list-unstyled">
     <table class="bg-light-subtle">
         <tr>
             <td>
-                <h1>Mes passions</h1>
+                <h1 class="text-decoration-underline title">Mes passions</h1>
             </td>
             <td>
-                <button class="btn btn-outline-primary"><a routerLink="../about" class="textColorHome"> ← About Me </a></button>
+                <button class="btn btn-outline-primary"><a routerLink="../skills"> ← Mes Compétences </a></button>
             </td>
         </tr>
     </table>
     <br>
-    <!-- ? Tableau pour mes passions arrangements -->
-    <table class="bg-primary-subtle w-75 m-auto">
+    <!-- ? Tableau pour mes passions => arrangements -->
+    <table class="bg-primary-subtle w-75 m-auto textColorHome">
         <br>
         <tr>
             <td class="textColorHome text-center bg-primary-subtle w-25">
-                    <h4>Codding</h4>
+                    <h4 class="text-decoration-underline">Code</h4>
                     <h6 *ngIf="progIsVisible">
-                        Depuis mes premiers cours d'électronique où l'on apprenais l'Arduino et où l'on m'a appris tout ce que 
-                        ce simple micro-controlleur pouvait accomplir, juste avec un simple bout de code, j'ai été tout de suite
-                        fasciné par cela. Au fur et à mesure de mon apprentissage, j'ai découvert divers language de 
-                        programmation, qui m'ont tout de suite intéréssé. Certains sont plus compliqué à apprendre,
-                        ou sont plus axés sur une seule chose, mais ils sont tout aussi intéréssants.
-
+                        Depuis mes premiers cours d’électronique avec Arduino, j’ai été fasciné par tout ce qu’un simple micro-contrôleur peut accomplir grâce au code.
+                        Au fil de mon apprentissage, j’ai découvert divers langages de programmation, chacun avec ses particularités, mais tous passionnants.
                     </h6>
                     <button class="btn btn-outline-primary mt-2 mb-3" (click)="showDetailsProg()"><a class="textColorHome">En savoir plus</a></button>
             </td>
-            <td class="textColorHome text-center bg-primary-subtle w-50">
-                    <h4>Électronique</h4>
+            <td class="textColorHome text-center bg-primary-subtle w-25">
+                    <h4 class="text-decoration-underline">Électronique</h4>
                     <h6 *ngIf="elecIsVisible">
-                        Pour l'électronique, 
+                        Ma passion pour l’électronique a commencé lorsque j’ai dû créer ma première alimentation.
+                        Chaque élève avait une tension attribuée, et il fallait choisir les bons composants, optimiser la disposition et concevoir un schéma efficace pour y parvenir.
                     </h6>
                     <button class="btn btn-outline-primary mt-2 mb-3" (click)="showDetailsElec()"><a class="textColorHome">En savoir plus</a></button>
             </td>
             <td class="textColorHome text-center bg-primary-subtle w-25">
-                <h4>Impression 3D</h4>
+                <h4 class="text-decoration-underline">Impression 3D</h4>
                 <h6 *ngIf="tripleDIsVisible">
-                    Pour l'impression 3D, 
+                    Ma passion pour l’impression 3D a commencé lors de mon stage de fin d’études.
+                    Pour mon projet, j’avais besoin d’une petite boîte pour mon alimentation, et j’ai décidé de la concevoir moi-même en impression 3D.
+                    Pouvoir modéliser ses propres pièces, avec pour seule limite l’imagination… c’est fascinant !
                 </h6>
                 <button class="btn btn-outline-primary mt-2 mb-3" (click)="showDetails3D()"><a class="textColorHome">En savoir plus</a></button>
             </td>
         </tr>
         <tr>
             <td class="textColorHome text-center bg-primary-subtle">
-                <h4>Manga et Anime</h4>
+                <h4 class="text-decoration-underline">Manga et Anime</h4>
                 <h6 *ngIf="mangaIsVisible">
-                    Pour les mangas,
+                    Ma passion pour les mangas a commencé à l’adolescence, avec le tout premier tome de Dragon Ball que j’ai reçu.
+                    Je le lisais sans arrêt, encore et encore.
+                    Peu à peu, j’ai commencé à collectionner mes séries préférées, et je passais des heures à les lire et relire…
+                    Et aujourd’hui encore, c’est un plaisir dont je ne me lasse pas.
                 </h6>
                 <button class="btn btn-outline-primary mt-2 mb-3" (click)="showDetailsManga()"><a class="textColorHome">En savoir plus</a></button>
             </td>
             <td class="textColorHome text-center bg-primary-subtle">
-                    <h4>Villes Médievales</h4>
-                    <h6 *ngIf="medIsVisible">
-                        Pour les villes médievales, 
-                    </h6>
-                    <button class="btn btn-outline-primary mt-2 mb-3" (click)="showDetailsMedieval()"><a class="textColorHome">En savoir plus</a></button>
-            </td>
-            <td class="textColorHome text-center bg-primary-subtle">
-                    <h4>Sciences</h4>
-                    <h6 *ngIf="scienceIsVisible">
-                        Pour les sciences, 
-                    </h6>
-                    <button class="btn btn-outline-primary mt-2 mb-3" (click)="showDetailsScience()"><a class="textColorHome">En savoir plus</a></button>
-                </td>
-        </tr>
-        <tr>
-            <td class="textColorHome text-center bg-primary-subtle">
-                    <h4>Antiquités</h4>
-                    <h6 *ngIf="antiqIsVisible">
-                        Pour les antiquitées,
-                    </h6>
-                    <button class="btn btn-outline-primary mt-2 mb-3" (click)="showDetailsAntiq()"><a class="textColorHome">En savoir plus</a></button>
-            </td>
-            <td class="textColorHome text-center bg-primary-subtle">
-                <h4>Musique</h4>
-                <h6 *ngIf="musicIsVisible">
-                    Pour la musique,
-                </h6>
-                <button class="btn btn-outline-primary mt-2 mb-3" (click)="showDetailsMusic()"><a class="textColorHome">En savoir plus</a></button>
-            </td>
-            <td class="textColorHome text-center bg-primary-subtle">
-                <h4>Dessins</h4>
+                <h4 class="text-decoration-underline">Dessins</h4>
                 <h6 *ngIf="drawIsVisible">
-                    Pour le dessin,
+                    Depuis petit, j’ai toujours aimé gribouiller.
+                    Avec le temps, ces simples traits sont devenus de vrais dessins, souvent inspirés de mes mangas et jeux préférés.
+                    Dessiner, c’est pour moi un moment d’évasion, où je laisse libre cours à mon imagination.
                 </h6>
                 <button class="btn btn-outline-primary mt-2 mb-3" (click)="showDetailsDraw()"><a class="textColorHome">En savoir plus</a></button>
             </td>
         </tr>
         <tr>
-            <td>
-
-            </td>
             <td class="textColorHome text-center bg-primary-subtle">
-                <h4>Photographie</h4>
+                    <h4 class="text-decoration-underline">Objets Vintages</h4>
+                    <h6 *ngIf="antiqIsVisible">
+                        J’ai toujours été fasciné par les objets anciens.
+                        Chaque pièce a son histoire, son vécu… et un charme unique qu’on ne retrouve pas dans les créations modernes."
+                    </h6>
+                    <button class="btn btn-outline-primary mt-2 mb-3" (click)="showDetailsAntiq()"><a class="textColorHome">En savoir plus</a></button>
+            </td>           
+            <td class="textColorHome text-center bg-primary-subtle">
+                <h4 class="text-decoration-underline">Photographie</h4>
                 <h6 *ngIf="photoIsVisible">
-                    Pour la photographie,
+                    La photo me permet de figer un instant précis.
+                    Que ce soit un paysage, un objet ou un détail, j'aime capturer ce qui, pour moi, mérite d'être immortalisé.
                 </h6>
-                <button class="btn btn-outline-primary mt-2 mb-3" (click)="showDetailsPhpto()"><a class="textColorHome">En savoir plus</a></button>
+                <button class="btn btn-outline-primary mt-2 mb-3" (click)="showDetailsPhoto()"><a class="textColorHome">En savoir plus</a></button>
             </td>
+        </tr>
+        <tr>
             <td>
-
+                <!-- * En attente d'autres thèmes -->
+            </td>           
+            <td>
+                <!-- * En attente d'autres thèmes -->
             </td>
         </tr>
     </table>

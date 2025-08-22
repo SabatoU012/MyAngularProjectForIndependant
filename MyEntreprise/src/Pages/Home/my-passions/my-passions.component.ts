@@ -22,13 +22,7 @@ export class MyPassionsComponent {
 
   mangaIsVisible : boolean = false //* ==> Pour la passion "Manga"
 
-  medIsVisible : boolean = false //* ==> Pour la passion "Villes Médievales"
-
-  scienceIsVisible : boolean = false //* ==> Pour la passion "Science"
-
   antiqIsVisible : boolean = false //* ==> Pour la passion "Antiquités"
-
-  musicIsVisible : boolean = false //* ==> Pour la passion "Musique"
 
   drawIsVisible : boolean = false //* ==> Pour la passion "Dessin"
 
@@ -38,41 +32,71 @@ export class MyPassionsComponent {
 
   showDetailsProg() {
     this.progIsVisible = !this.progIsVisible 
+    this.elecIsVisible = false
+    this.tripleDIsVisible = false
+    this.mangaIsVisible = false
+    this.antiqIsVisible = false
+    this.drawIsVisible  = false
+    this.photoIsVisible = false
   }
 
   showDetailsElec() {
-    this.elecIsVisible = !this.elecIsVisible 
+    this.elecIsVisible = !this.elecIsVisible
+    this.progIsVisible = false
+    this.tripleDIsVisible = false
+    this.mangaIsVisible = false
+    this.antiqIsVisible = false
+    this.drawIsVisible  = false
+    this.photoIsVisible = false
   }
 
   showDetails3D() {
-    this.tripleDIsVisible = !this.tripleDIsVisible 
+    this.tripleDIsVisible = !this.tripleDIsVisible
+    this.elecIsVisible = false
+    this.progIsVisible = false
+    this.mangaIsVisible = false
+    this.antiqIsVisible = false
+    this.drawIsVisible  = false
+    this.photoIsVisible = false
   }
 
   showDetailsManga() {
-    this.mangaIsVisible = !this.mangaIsVisible 
-  }
-
-  showDetailsMedieval() {
-    this.medIsVisible = !this.medIsVisible 
-  }
-
-  showDetailsScience() {
-    this.scienceIsVisible = !this.scienceIsVisible 
+    this.mangaIsVisible = !this.mangaIsVisible
+    this.elecIsVisible = false
+    this.tripleDIsVisible = false
+    this.progIsVisible = false
+    this.antiqIsVisible = false
+    this.drawIsVisible  = false
+    this.photoIsVisible = false
   }
 
   showDetailsAntiq() {
-    this.antiqIsVisible = !this.antiqIsVisible 
-  }
-
-  showDetailsMusic() {
-    this.musicIsVisible = !this.musicIsVisible 
+    this.antiqIsVisible = !this.antiqIsVisible
+    this.elecIsVisible = false
+    this.tripleDIsVisible = false
+    this.mangaIsVisible = false
+    this.progIsVisible = false
+    this.drawIsVisible  = false
+    this.photoIsVisible = false
   }
 
   showDetailsDraw() {
     this.drawIsVisible = !this.drawIsVisible 
+    this.elecIsVisible = false
+    this.tripleDIsVisible = false
+    this.mangaIsVisible = false
+    this.antiqIsVisible = false
+    this.progIsVisible  = false
+    this.photoIsVisible = false
   }
 
-  showDetailsPhpto() {
-    this.photoIsVisible = !this.photoIsVisible 
+  showDetailsPhoto() {
+    this.photoIsVisible = !this.photoIsVisible
+    this.elecIsVisible = false
+    this.tripleDIsVisible = false
+    this.mangaIsVisible = false
+    this.antiqIsVisible = false
+    this.drawIsVisible  = false
+    this.progIsVisible = false
   }
 }

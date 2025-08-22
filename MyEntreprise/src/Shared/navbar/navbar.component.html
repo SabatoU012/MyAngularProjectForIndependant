@@ -2,14 +2,14 @@
 
 <ul class="navbar list-unstyled justify-content-evenly bg-transparent">
     <li>
-        <button class="btn bg-transparent"><a routerLink=""><img src="{{img}}" alt="" width="200" class="m-auto"></a></button>
+        <button class="btn bg-transparent"><a routerLink=""><img src="{{img}}" alt="" width="180" class="m-auto"></a></button>
     </li>
 	<li>
 	</li>
     <li>
 	<div class="col">
 		<div ngbDropdown class="d-inline-block"> 
-			<button type="button" class="btn btn-primary" id="dropdownServices" ngbDropdownToggle>
+			<button type="button" class="btn btn-outline-primary" id="dropdownServices" ngbDropdownToggle>
 				Mes Services
 			</button>
 			<div ngbDropdownMenu aria-labelledby="dropdownServices">
@@ -17,8 +17,10 @@
 				<button ngbDropdownItem><a routerLink="reparationElectro">Réparations</a></button>
 				<button ngbDropdownItem><a routerLink="programmation">Programmation</a></button>
 				<button ngbDropdownItem><a routerLink="impression3D">Impression 3D</a></button>
-				<button ngbDropdownItem><a href="https://calendly.com/willuc-kaizentech/nouvelle-reunion">Prendre Rendez-Vous</a></button>
 			</div>
 		</div>
 	</div>
+	<li>
+		<button class="btn btn-outline-light"><a routerLink="contact">Contact</a></button>
+	</li>
 </ul>
