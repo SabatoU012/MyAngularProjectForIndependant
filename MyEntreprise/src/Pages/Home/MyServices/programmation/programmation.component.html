@@ -1,46 +1,93 @@
-<div class="m-auto w-75 text-center">
-    <div class="card"> 
-        <h1 class="card m-auto w-100 text-center text-uppercase">
-            Service Proposé : Programmation
+<div class="card m-auto w-75 text-center bg-black">
+        <h1 class="card m-auto w-100 text-center text-uppercase title bg-black">
+            Programmation – Du code sur mesure pour vos projets
+            <cite class="text-capitalize citation">
+                Donnez vie à vos idées grâce à un code propre, efficace et adapté à vos besoins.
+            </cite>
         </h1>
-    </div>   
-    <div class="card">
-        <h3>
-            Présentation Du Service
-        </h3>
-        <p style="max-width: 550px;" class="fst-italic m-auto fs-5">
-            Hello World ! 
-        </p>
-    </div> 
-    <div class="card mt-3">
-        <h4>
-            My Options For This Services
-        </h4>
+        
+        <div class="card bg-black">
+            <table>
+                <tr class="w-50">
+                    <td class="listTask bord"> 
+                        <h5>Les languages que je sais utiliser</h5>
+                    </td>
+                    <td class="listLearn bord">
+                        <h5>
+                            En cours d'apprentissage
+                        </h5>
+                    </td>
+                </tr>
+                <tr>
+                    <td  class="listTask w-50">                        
+                        <ul class="list-unstyled">
+                            <li>
+                                🧮 Arduino
+                            </li>
+                            <li>
+                                🧮 JavaScript
+                            </li>
+                            <li>
+                                🧮 SQL
+                            </li>
+                            <li>
+                                🧮 Python
+                            </li>
+                            <li>
+                                🧮 HTML
+                            </li>
+                            <li>
+                                🧮 CSS
+                            </li>
+                            <li>
+                                🧮 C#
+                            </li>
+                        </ul>
+                    </td>
+                    <td class="listLearn">                       
+                        <ul class="list-unstyled">
+                            <li>
+                                🧮 PHP
+                            </li>
+                            <li>
+                                🧮 Shell
+                            </li>
+                            <li>
+                                🧮 Java
+                            </li>
+                            <li>
+                                🧮 C++
+                            </li>
+                            <li>
+                                🧮 C
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
     </div>
-    <div *ngFor="let item of MyOptionsForThisService">
-        <div class="card">
-            <h4>
-                Name Of This Option
-            </h4>
-            <p class="fs-5">
-                {{item.name}}
-            </p>
-            
-            <h4 class="text-decoration-underline">
-                Description 
-            </h4>
-            <p style="max-width: 550px;" class="fst-italic m-auto fs-5">
-                {{item.description}}
-            </p>
+
+        <div class="card listProcedure">
+            <ul  class="list-unstyled">
+                <h5> Méthode de travail </h5>
+                <li>
+                    1️⃣ Analyse du besoin — Compréhension claire de l’objectif
+                </li>
+                <li>
+                    2️⃣ Développement optimisé — Code lisible, structuré et commenté
+                </li>
+                <li>
+                    3️⃣ Tests & optimisation — Vérification et ajustement pour garantir la performance
+                </li>
+            </ul>
         </div>
         
-    </div>
-    <div class="card mt-3">
-        <h4 class="text-decoration-underline">
-            Prendre Rendez-Vous
-        </h4> 
-        <p>
-            <button (click)="getRDV()">Cliquez Ici !</button>
-        </p>
-    </div>
+        <div class="card rdv">
+            <h4 class="text-decoration-underline">
+                Prendre Rendez-Vous pour un devis 
+            </h4> 
+            <p>
+                <button (click)="getRDV()"  class="btn btn-outline-dark">Cliquez Ici !</button>
+            </p>
+        </div>
 </div>
