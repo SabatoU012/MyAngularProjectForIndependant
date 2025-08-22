@@ -1,8 +1,6 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import { Router, RouterLink, } from '@angular/router';
 import { NgbDropdownModule } from '@ng-bootstrap/ng-bootstrap';
-import { NgbToastHeader } from "../../../../node_modules/@ng-bootstrap/ng-bootstrap/toast/toast";
-import { NgIf } from '@angular/common';
 
 interface Section {
   name: string;
