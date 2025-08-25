@@ -1,13 +1,17 @@
 .citation {
     font-size : 14pt;
-    color : #FF59EB;
+    color : #3B82F6;
     font-style: italic;
 }
 
 .moreAboutService {
-    color : #9239FA;
+    color : #2563EB;
 }
 
 .title {
-  color : #75FFFE;
+  color : #1E3A8A;
+}
+
+.butoon {
+  color : #2563EB;
 }

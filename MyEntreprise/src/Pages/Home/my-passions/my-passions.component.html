@@ -1,20 +1,20 @@
 <div class="card m-auto w-75 text-start border-0 passions list-unstyled">
-    <table class="bg-light-subtle">
+    <table class="titleBg">
         <tr>
             <td>
                 <h1 class="text-decoration-underline title">Mes passions</h1>
             </td>
             <td>
-                <button class="btn btn-outline-primary"><a routerLink="../skills"> ← Mes Compétences </a></button>
+                <button class="btn btn-outline-info"><a routerLink="../skills" class="butoon"> ← Mes Compétences </a></button>
             </td>
         </tr>
     </table>
     <br>
     <!-- ? Tableau pour mes passions => arrangements -->
-    <table class="bg-primary-subtle w-75 m-auto textColorHome">
+    <table class="homeBgColor w-75 m-auto textColorHome">
         <br>
         <tr>
-            <td class="textColorHome text-center bg-primary-subtle w-25">
+            <td class="textColorHome text-center homeBgColor w-25 title">
                     <h4 class="text-decoration-underline">Code</h4>
                     <h6 *ngIf="progIsVisible">
                         Depuis mes premiers cours d’électronique avec Arduino, j’ai été fasciné par tout ce qu’un simple micro-contrôleur peut accomplir grâce au code.
@@ -22,7 +22,7 @@
                     </h6>
                     <button class="btn btn-outline-primary mt-2 mb-3" (click)="showDetailsProg()"><a class="textColorHome">En savoir plus</a></button>
             </td>
-            <td class="textColorHome text-center bg-primary-subtle w-25">
+            <td class="textColorHome text-center homeBgColor w-25 title">
                     <h4 class="text-decoration-underline">Électronique</h4>
                     <h6 *ngIf="elecIsVisible">
                         Ma passion pour l’électronique a commencé lorsque j’ai dû créer ma première alimentation.
@@ -30,7 +30,7 @@
                     </h6>
                     <button class="btn btn-outline-primary mt-2 mb-3" (click)="showDetailsElec()"><a class="textColorHome">En savoir plus</a></button>
             </td>
-            <td class="textColorHome text-center bg-primary-subtle w-25">
+            <td class="textColorHome text-center homeBgColor w-25 title">
                 <h4 class="text-decoration-underline">Impression 3D</h4>
                 <h6 *ngIf="tripleDIsVisible">
                     Ma passion pour l’impression 3D a commencé lors de mon stage de fin d’études.
@@ -41,7 +41,7 @@
             </td>
         </tr>
         <tr>
-            <td class="textColorHome text-center bg-primary-subtle">
+            <td class="textColorHome text-center homeBgColor title">
                 <h4 class="text-decoration-underline">Manga et Anime</h4>
                 <h6 *ngIf="mangaIsVisible">
                     Ma passion pour les mangas a commencé à l’adolescence, avec le tout premier tome de Dragon Ball que j’ai reçu.
@@ -51,7 +51,7 @@
                 </h6>
                 <button class="btn btn-outline-primary mt-2 mb-3" (click)="showDetailsManga()"><a class="textColorHome">En savoir plus</a></button>
             </td>
-            <td class="textColorHome text-center bg-primary-subtle">
+            <td class="textColorHome text-center homeBgColor title">
                 <h4 class="text-decoration-underline">Dessins</h4>
                 <h6 *ngIf="drawIsVisible">
                     Depuis petit, j’ai toujours aimé gribouiller.
@@ -62,7 +62,7 @@
             </td>
         </tr>
         <tr>
-            <td class="textColorHome text-center bg-primary-subtle">
+            <td class="textColorHome text-center homeBgColor title">
                     <h4 class="text-decoration-underline">Objets Vintages</h4>
                     <h6 *ngIf="antiqIsVisible">
                         J’ai toujours été fasciné par les objets anciens.
@@ -70,7 +70,7 @@
                     </h6>
                     <button class="btn btn-outline-primary mt-2 mb-3" (click)="showDetailsAntiq()"><a class="textColorHome">En savoir plus</a></button>
             </td>           
-            <td class="textColorHome text-center bg-primary-subtle">
+            <td class="textColorHome text-center homeBgColor title">
                 <h4 class="text-decoration-underline">Photographie</h4>
                 <h6 *ngIf="photoIsVisible">
                     La photo me permet de figer un instant précis.

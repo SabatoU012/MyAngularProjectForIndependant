@@ -10,7 +10,15 @@ body {
 }
 
 .textColorHome {
-    color : #6a36c2;
+    color : #374151;
+}
+
+.homeBgColor {
+  background-color : #E8F0FF;
+}
+
+.titleBg {
+  background-color : #F9FAFB;
 }
 
 /* Smartphones (portrait et petits écrans) */

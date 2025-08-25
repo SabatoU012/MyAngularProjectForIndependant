@@ -1,5 +1,5 @@
 .rdv {
-    background-color : #94F7DF;
+    background-color : #E8FFFC;
     color : #8253FC;
     font-size : 22pt;
 }
@@ -10,4 +10,16 @@
 
 .takeRdv {
     color : #DB5EA7;
+}
+
+.title {
+  color : #1E3A8A;
+}
+
+.butoon {
+  color : #2563EB;
+}
+
+.link {
+  color : #2563EB;
 }

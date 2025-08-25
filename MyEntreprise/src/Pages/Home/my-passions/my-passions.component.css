@@ -1,11 +1,15 @@
 .passions {
-    background-color : #8c60ba;
+    background-color : #6D28D9;
 }
 
 h6 {
-    color : #f199f5;
+    color : #2563EB;
 }
 
 .title {
-  color : #75FFFE;
+  color : #1E3A8A;
+}
+
+.butoon {
+  color : #2563EB;
 }

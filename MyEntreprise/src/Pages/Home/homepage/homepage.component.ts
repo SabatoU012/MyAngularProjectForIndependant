@@ -19,6 +19,7 @@ interface Section {
 export class HomepageComponent {
 
   wheel : boolean = false
+  random : number = 0
 
    @ViewChild('wheel', { static: true }) wheelCanvas!: ElementRef<HTMLCanvasElement>;
 
@@ -36,6 +37,53 @@ export class HomepageComponent {
   constructor(private router: Router) {}
 
   ngOnInit() {
+    //* Randomiser la disposition des sections pour avoir plus de 
+    this.random = Math.random()*10
+    // 🔹 Remet la liste complète des sections
+    if ( (this.random > 0) && (this.random <= 2) )
+    {
+      this.sections = [
+        { name: 'Mes Passions', url: '/passions' },
+        { name: 'About Me', url: '/about' },
+        { name: 'Mes Compétences', url: '/skills' },
+        { name: 'Contact', url: '/contact' },
+        // 👉 ajoute ici toutes les sections que tu veux
+      ];
+    }
+    else if ( (this.random > 2) && (this.random <= 4) )
+    {
+      this.sections = [
+        { name: 'About Me', url: '/about' },
+        { name: 'Mes Compétences', url: '/skills' },
+        { name: 'Contact', url: '/contact' },
+        { name: 'Mes Passions', url: '/passions' },
+        // 👉 ajoute ici toutes les sections que tu veux
+      ];
+    }
+    else if ( (this.random > 4  ) && (this.random <= 6) )
+    {
+      this.sections = [
+        { name: 'Mes Compétences', url: '/skills' },
+        { name: 'Contact', url: '/contact' },
+        { name: 'Mes Passions', url: '/passions' },
+        { name: 'About Me', url: '/about' },
+        // 👉 ajoute ici toutes les sections que tu veux
+      ];
+    }
+    else if ( (this.random > 6  ) && (this.random <= 8) )
+    {
+      this.sections = [
+        { name: 'Mes Compétences', url: '/skills' },
+        { name: 'Contact', url: '/contact' },
+        { name: 'Mes Passions', url: '/passions' },
+        { name: 'About Me', url: '/about' },
+        // 👉 ajoute ici toutes les sections que tu veux
+      ];
+    }
+    else if (this.random > 8 ) {
+      this.random = Math.random()*10
+    }
+    // * 
     this.ctx = this.wheelCanvas.nativeElement.getContext('2d')!;
 
     // Récupération des sections sauvegardées
@@ -132,9 +180,10 @@ spinWheel() {
 }
 
   resetWheel() {
-    const random : number = Math.random()*10
+    //* Randomiser la disposition des sections pour avoir plus de 
+    this.random = Math.random()*10
     // 🔹 Remet la liste complète des sections
-    if ( (random > 0) && (random <= 2) )
+    if ( (this.random > 0) && (this.random <= 2) )
     {
       this.sections = [
         { name: 'Mes Passions', url: '/passions' },
@@ -144,7 +193,7 @@ spinWheel() {
         // 👉 ajoute ici toutes les sections que tu veux
       ];
     }
-    else if ( (random > 2) && (random <= 4) )
+    else if ( (this.random > 2) && (this.random <= 4) )
     {
       this.sections = [
         { name: 'About Me', url: '/about' },
@@ -154,7 +203,7 @@ spinWheel() {
         // 👉 ajoute ici toutes les sections que tu veux
       ];
     }
-    else if ( (random > 4  ) && (random <= 7) )
+    else if ( (this.random > 4  ) && (this.random <= 6) )
     {
       this.sections = [
         { name: 'Mes Compétences', url: '/skills' },
@@ -164,7 +213,7 @@ spinWheel() {
         // 👉 ajoute ici toutes les sections que tu veux
       ];
     }
-    else if (random > 7)
+    else if ( (this.random > 6  ) && (this.random <= 8) )
     {
       this.sections = [
         { name: 'Mes Compétences', url: '/skills' },
@@ -173,6 +222,9 @@ spinWheel() {
         { name: 'About Me', url: '/about' },
         // 👉 ajoute ici toutes les sections que tu veux
       ];
+    }
+    else if (this.random > 8 ) {
+      this.random = Math.random()*10
     }
     // 🔹 Supprime du localStorage
     localStorage.removeItem('wheelSections');

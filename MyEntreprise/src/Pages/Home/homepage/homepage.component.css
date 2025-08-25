@@ -1,6 +1,6 @@
 .improvement {
     font-size : 12pt;
-    color : #2FCC00;
+    color : #059669;
 }
 
 .wheel-container {
@@ -23,9 +23,17 @@
 }
 
 .textTalent {
-  color : #F73E3E;
+  color : #F97316;
 }
 
 .title {
-  color : #75FFFE;
+  color : #1E3A8A;
+}
+
+.butoon {
+  color : #2563EB;
+}
+
+.butoon ::hover {
+  color : #FFFFFF;
 }
