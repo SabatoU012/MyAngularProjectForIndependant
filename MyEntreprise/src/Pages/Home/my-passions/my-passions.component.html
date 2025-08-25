@@ -1,16 +1,22 @@
 <div class="card m-auto w-75 text-start border-0 passions list-unstyled">
+    <table class="bg-light-subtle">
     <table class="titleBg">
         <tr>
             <td>
                 <h1 class="text-decoration-underline title">Mes passions</h1>
             </td>
             <td>
+                <button class="btn btn-outline-primary"><a routerLink="../skills"> ← Mes Compétences </a></button>
                 <button class="btn btn-outline-info"><a routerLink="../skills" class="butoon"> ← Mes Compétences </a></button>
             </td>
         </tr>
     </table>
     <br>
     <!-- ? Tableau pour mes passions => arrangements -->
+    <table class="bg-primary-subtle w-75 m-auto textColorHome">
+        <br>
+        <tr>
+            <td class="textColorHome text-center bg-primary-subtle w-25">
     <table class="homeBgColor w-75 m-auto textColorHome">
         <br>
         <tr>
@@ -22,6 +28,7 @@
                     </h6>
                     <button class="btn btn-outline-primary mt-2 mb-3" (click)="showDetailsProg()"><a class="textColorHome">En savoir plus</a></button>
             </td>
+            <td class="textColorHome text-center bg-primary-subtle w-25">
             <td class="textColorHome text-center homeBgColor w-25 title">
                     <h4 class="text-decoration-underline">Électronique</h4>
                     <h6 *ngIf="elecIsVisible">
@@ -30,6 +37,7 @@
                     </h6>
                     <button class="btn btn-outline-primary mt-2 mb-3" (click)="showDetailsElec()"><a class="textColorHome">En savoir plus</a></button>
             </td>
+            <td class="textColorHome text-center bg-primary-subtle w-25">
             <td class="textColorHome text-center homeBgColor w-25 title">
                 <h4 class="text-decoration-underline">Impression 3D</h4>
                 <h6 *ngIf="tripleDIsVisible">
@@ -41,6 +49,7 @@
             </td>
         </tr>
         <tr>
+            <td class="textColorHome text-center bg-primary-subtle">
             <td class="textColorHome text-center homeBgColor title">
                 <h4 class="text-decoration-underline">Manga et Anime</h4>
                 <h6 *ngIf="mangaIsVisible">
@@ -51,6 +60,7 @@
                 </h6>
                 <button class="btn btn-outline-primary mt-2 mb-3" (click)="showDetailsManga()"><a class="textColorHome">En savoir plus</a></button>
             </td>
+            <td class="textColorHome text-center bg-primary-subtle">
             <td class="textColorHome text-center homeBgColor title">
                 <h4 class="text-decoration-underline">Dessins</h4>
                 <h6 *ngIf="drawIsVisible">
@@ -62,6 +72,7 @@
             </td>
         </tr>
         <tr>
+            <td class="textColorHome text-center bg-primary-subtle">
             <td class="textColorHome text-center homeBgColor title">
                     <h4 class="text-decoration-underline">Objets Vintages</h4>
                     <h6 *ngIf="antiqIsVisible">
@@ -70,6 +81,7 @@
                     </h6>
                     <button class="btn btn-outline-primary mt-2 mb-3" (click)="showDetailsAntiq()"><a class="textColorHome">En savoir plus</a></button>
             </td>           
+            <td class="textColorHome text-center bg-primary-subtle">
             <td class="textColorHome text-center homeBgColor title">
                 <h4 class="text-decoration-underline">Photographie</h4>
                 <h6 *ngIf="photoIsVisible">
