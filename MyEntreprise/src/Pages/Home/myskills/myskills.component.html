@@ -1,23 +1,23 @@
-<div class="card m-auto w-75 text-start border-0 skills list-unstyled homeBgColor">
-    <table class="titleBg">
+<div class="card m-auto w-75 text-start border-0 skills list-unstyled">
+    <table class="bg-light-subtle">
         <tr>
             <td>
                 <h1 class=" text-decoration-underline title">Mes Compétences</h1>
             </td>
             <td>
-                <button class="btn btn-outline-info"><a routerLink="../about" class="butoon"> ← About Me </a></button>
+                <button class="btn btn-outline-primary"><a routerLink="../about"> ← About Me </a></button>
             </td>
             <td>
-                <button class="btn btn-outline-info"><a routerLink="../passions" class="butoon"> Mes Passions → </a></button>
+                <button class="btn btn-outline-primary"><a routerLink="../passions" > Mes Passions → </a></button>
             </td>
         </tr>
     </table>
     <br>
     <!-- ? Tableau pour mes passions => arrangements -->
-    <table class="homeBgColor w-75 m-auto textColorHome">
+    <table class="bg-primary-subtle w-75 m-auto textColorHome">
         <br>
         <tr>
-            <td class="title text-center">
+            <td class="textColorHome text-center bg-primary-subtle">
                 <h4 class=" text-decoration-underline">Dévelopement Web</h4>
                 <h6 *ngIf="skillsInWeb">
                     Logiciels
@@ -60,7 +60,7 @@
                 </h6>
                 <button class="btn btn-outline-primary mt-2 mb-3" (click)="showDetailsWeb()"><a class="textColorHome">En savoir plus</a></button>
             </td>
-            <td class="title text-center homeBgColor w-25">
+            <td class="textColorHome text-center bg-primary-subtle w-25">
                     <h4 class=" text-decoration-underline">Code</h4>
                     <h6 *ngIf="skillsInProg">
                     <ul class="list-unstyled">
@@ -95,7 +95,7 @@
             </td>
         </tr>
         <tr>
-            <td class="title text-center homeBgColor w-25">
+            <td class="textColorHome text-center bg-primary-subtle w-25">
                     <h4 class=" text-decoration-underline">Électronique</h4>
                     <h6 *ngIf="skillsInElect">
                         <ul class="list-unstyled">
@@ -106,7 +106,7 @@
                     </h6>
                     <button class="btn btn-outline-primary mt-2 mb-3" (click)="showDetailsElect()"><a class="textColorHome">En savoir plus</a></button>
             </td>
-            <td class="title text-center homeBgColor w-25">
+            <td class="textColorHome text-center bg-primary-subtle w-25">
                 <h4 class=" text-decoration-underline">Impression 3D</h4>
                 <h6 *ngIf="skillsIn3D">
                     <ul class="list-unstyled">
